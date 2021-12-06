@@ -16,10 +16,10 @@ enum Enum_Role {
 }
 
 model User {
-  id     String    @id @default(cuid())
-  name   String
-  email  String    @unique
-  role   Enum_Role @default(ADMIN)
+  id      String    @id @default(cuid())
+  name    String
+  email   String    @unique
+  role    Enum_Role @default(ADMIN)
   profile Profile?
 }
 
