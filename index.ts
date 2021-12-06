@@ -7,6 +7,6 @@ const server = new ApolloServer({
     schema: buildSubgraphSchema([{ typeDefs: userTypes, resolvers: userResolvers }]),
 });
 
-server.listen({port: 5000}).then(({url}) => {
+server.listen({port: 4001}).then(({url}) => {
     console.log(`🚀  Server ready at ${url}`);
 });
